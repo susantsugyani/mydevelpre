@@ -1,0 +1,97 @@
+    1  sudo yum install -y java-1.8.0-openjdk
+    2  sudo yum install -y java-1.8.0-openjdk-devel
+    3  sudo yum install java-11-openjdk
+    4  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    5  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+    6  yum install jenkins -y
+    7  ls -altr
+    8  vi .bash_profile
+    9  sudo systemctl daemon-reload
+   10  sudo systemctl start jenkins
+   11  sudo systemctl status jenkins
+       sudo systemctl is-active jenkins
+	   ls /var/lib/jenkins
+	   grep jenkins /etc/passwd
+	   
+   
+   
+   INSTALLATION MODE IN LINUX SERVER
+   
+   PACKAGE--
+   /var/lib/jenkins
+   
+   war file:
+   ~/.jenkins
+   
+   jenkins---lts
+             sts
+	installation mode for jenkins
+
+	
+	1.in a container
+	
+    2. systemd Mode(systemctl start jenkins)
+	                (systemctl enable jenkins)
+					( systemctl status jenkins)
+
+    jenkins----1.GUL---DEFAULT PORT 8080
+               2.CIL---(developers)
+
+	important term in jenkins
+   
+   The basic arch. of the jenkins is master and slave concept.
+   1.JENKINS MASTER
+   2.JENKINS SLAVE
+   3.JENKINS PLUGIN
+   4.JENKINS PRODUCT/JOB
+   5,JENKINS BUILD
+   6.JENKINS HOME DIRECTORY
+installation procedure of git,maven and jenkins
+
+
+ 1  yum update -y
+    2  yum install git -y
+    3  mkdir manish
+    4  cd manish
+    5  git init
+    6  la - altr
+    7  ls -altr
+    8  ls
+    9  ls -ltr
+   10  ls -al
+   11  cd ..
+   12  sudo yum install -y java-1.8.0-openjdk
+   13  sudo yum install -y java-1.8.0-openjdk-devel
+   14  wget https://downloads.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz
+   15  tar -xvf apache-maven-3.8.6-bin.tar.gz -C /opt
+   16  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+   17  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+   18  yum install jenkins -y
+   19  ls -altr
+   20  vi .bash_profile
+   21  service jenkins start
+   22  y
+   23  service 
+   23  service jenkins status
+   24  sudo systemctl is-active jenkins
+   25  cd /var/lib/jenkins
+   26  ls 
+   27  ls jobs
+   28  cd jobs
+   29  ls
+   36  cd /home/ec2-user
+   37  cat /var/lib/jenkins/secrets/initialAdminPassword
+   38  cd /var/lib/jenkins
+   39  ls
+   40  cd secrets
+   42  ls
+   43  cat initialAdminPassword
+   
+==================================================   for interview==================================================
+   Build Triggers=========99.99% questions they will ask
+   1.cron job
+   2.webhooks
+   3.poll scm
+   crediatals=============99.99%
+   manage config >
+   

@@ -1,0 +1,48 @@
+    1  sudo yum install -y java-1.8.0-openjdk
+    2  sudo yum install -y java-1.8.0-openjdk-devel
+    3  sudo yum install java-11-openjdk
+    4  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    5  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+    6  yum install jenkins -y
+    7  ls -altr
+    8  vi .bash_profile
+    9  sudo systemctl daemon-reload
+   10  sudo systemctl start jenkins
+   11  sudo systemctl status jenkins
+       sudo systemctl is-active jenkins
+	   ls /var/lib/jenkins
+	   grep jenkins /etc/passwd
+	   
+   
+   
+   INSTALLATION MODE IN LINUX SERVER
+   
+   PACKAGE--
+   /var/lib/jenkins
+   
+   war file:
+   ~/.jenkins
+   
+   jenkins---lts
+             sts
+	installation mode for jenkins
+
+	
+	1.in a container
+	
+    2. systemd Mode(systemctl start jenkins)
+	                (systemctl enable jenkins)
+					( systemctl status jenkins)
+
+    jenkins----1.GUL---DEFAULT PORT 8080
+               2.CIL---(developers)
+
+	important term in jenkins
+   
+   The basic arch. of the jenkins is master and slave concept.
+   1.JENKINS MASTER
+   2.JENKINS SLAVE
+   3.JENKINS PLUGIN
+   4.JENKINS PRODUCT/JOB
+   5,JENKINS BUILD
+   6.JENKINS HOME DIRECTORY
